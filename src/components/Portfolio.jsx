@@ -272,7 +272,7 @@ export const Portfolio = () => {
       </SwiperSlide>
 
       {/* Slide 4 */}
-      <SwiperSlide>
+      {/* <SwiperSlide>
         <div className="h-full flex flex-col justify-center p-12">
           
           <h2 className="text-4xl font-bold mb-8">
@@ -298,7 +298,7 @@ export const Portfolio = () => {
             Open Project
           </a>
         </div>
-      </SwiperSlide>
+      </SwiperSlide> */}
 
     </Swiper>
   </div>

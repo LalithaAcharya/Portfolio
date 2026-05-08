@@ -1,7 +1,16 @@
 import React from 'react'
 import ProfilePic from '../assets/ProfilePic.jpeg'
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
+
+ const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/about");
+  };
+
+
   return (
     <>
   <div className="min-h-screen bg-[#0f172a] text-white flex items-center justify-center px-10 relative overflow-hidden">
@@ -41,7 +50,7 @@ export const Home = () => {
           </p>
 
           {/* Button */}
-          <button className="group flex items-center border-2 border-[#ee6c4d] rounded-full overflow-hidden hover:bg-[#ee6c4d] transition-all duration-300">
+          <button className="group flex items-center border-2 border-[#ee6c4d] rounded-full overflow-hidden hover:bg-[#ee6c4d] transition-all duration-300" onClick={handleClick}>
             
             <span className="px-8 py-4 text-sm font-semibold tracking-wide">
               Explore Portfolio
